@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "k2d"; /* Nom de la police à utiliser */
+  src: url("/polices/k2d-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  background-color: #06092c;
+  color: white;
+  font-family: "k2d", sans-serif;
+}
