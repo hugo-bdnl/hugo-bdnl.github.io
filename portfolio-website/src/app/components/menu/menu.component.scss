@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 100%;
 }
 
@@ -13,11 +12,18 @@
   margin: 100px 0 0 200px;
 }
 
-.links {
+.links nav {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   margin: 50px 0 0 200px;
+}
+
+.links a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px 0;
 }
 
 .contact {
@@ -26,7 +32,7 @@
   justify-content: space-between;
   height: 100%;
   max-width: 35%;
-  margin: 50px 0 0 200px;
+  margin: 100px 0 0 200px;
 }
 
 p {
@@ -42,43 +48,6 @@ i:hover {
   color: rgb(216, 216, 216);
 }
 
-.links ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.links li {
-  margin: 20px 0;
-  position: relative;
-  display: flex; /* Permet de disposer la barre et le lien en ligne */
-  align-items: center; /* Centre verticalement le texte et la barre */
-}
-
-.links li::before {
-  content: '';
-  display: block; /* Nécessaire pour que la barre soit traitée comme un élément visible */
-  width: 30px; /* Largeur initiale de la barre */
-  height: 2px; /* Épaisseur de la barre */
-  background: white;
-  transition: width 0.3s ease; /* Animation fluide */
-  margin-right: 10px; /* Espace entre la barre et le texte */
-}
-
-.links li:hover::before {
-  width: 100%; /* La barre s'élargit sur toute la largeur disponible au survol */
-}
-
-.links a {
-  text-decoration: none;
-  color: #5c6378;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: color 0.3s ease, transform 0.3s ease; /* Animation pour la couleur et le déplacement du lien */
-}
-
-.links a:hover {
+.presentation h1,h3{
   color: white;
-  transform: translateX(-10px); /* Le lien se déplace à gauche */
 }
