@@ -1,13 +1,8 @@
 import { isPlatformBrowser } from '@angular/common';
-import {
-  AfterViewInit,
-  Component,
-  Inject,
-  PLATFORM_ID,
-} from '@angular/core';
+import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { AboutComponent } from '../about/about.component';
-import { ExperienceComponent } from '../experience/experience.component';
+import { CompetencesComponent } from '../competences/competences.component';
 import { FormationComponent } from '../formation/formation.component';
 import { MenuComponent } from '../menu/menu.component';
 import { ProjectsComponent } from '../projects/projects.component';
@@ -21,7 +16,7 @@ import { ProjectsComponent } from '../projects/projects.component';
     MenuComponent,
     FormationComponent,
     AboutComponent,
-    ExperienceComponent,
+    CompetencesComponent,
     ProjectsComponent,
   ],
 })

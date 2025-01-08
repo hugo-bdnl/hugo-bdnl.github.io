@@ -6,6 +6,6 @@ export const routes: Routes = [
   { path: 'menu', component: AppComponent },
   { path: 'about', component: AppComponent },
   { path: 'formation', component: AppComponent },
-  { path: 'experience', component: AppComponent },
+  { path: 'competences', component: AppComponent },
   { path: 'projects', component: AppComponent },
 ];
