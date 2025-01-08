@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 100px 0 100px 0;
+}
+
+.dates,
+.formations {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dates {
+  width: 50%;
+}
+
+.dates h1 {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #f4f4f4;
+}
+
+.date1{
+    margin-top: 16%;
+}
+
+.date2{
+    margin-top: 83%;
+}
+
+.formations h1 {
+  font-weight: bold;
+  color: #53f8c9;
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin-left: auto;
+    }
+
+    .dates{
+        display: none;
+    }
+}

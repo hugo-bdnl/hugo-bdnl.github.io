@@ -6,12 +6,16 @@
   margin: 100px 0 0 0;
 }
 
-p{
-    margin: 40px 0 40px 0;
+p {
+  margin: 40px 0 40px 0;
+}
+
+span {
+  color: #53f8c9;
 }
 
 @media (max-width: 800px) {
-  .container{
+  .container {
     margin-left: auto;
   }
 }

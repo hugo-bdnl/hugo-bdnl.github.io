@@ -6,13 +6,17 @@
 
 .sidebar {
   flex: 1;
+  position: sticky;
   height: 100%;
   left: 0;
+  top: 0;
+  overflow: hidden;
 }
 
 .content {
   flex: 1;
   height: 100%;
+  overflow: auto;
 }
 
 @media (max-width: 800px) {
