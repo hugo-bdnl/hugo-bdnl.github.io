@@ -2,11 +2,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 50px;
+  gap: 0px;
   margin: 100px 0 100px 0;
 }
 
-.dates,
 .formations {
   display: flex;
   flex-direction: column;
@@ -15,20 +14,27 @@
 
 .dates {
   width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dates .but,
+.dates .bac {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 50%; 
+  background-color: #222; 
+  border-radius: 5px;
 }
 
 .dates h1 {
   font-size: 1rem;
   font-weight: lighter;
   color: #f4f4f4;
-}
-
-.date1{
-    margin-top: 16%;
-}
-
-.date2{
-    margin-top: 83%;
+  line-height: 1.5;
 }
 
 .formations h1 {
@@ -37,11 +43,15 @@
 }
 
 @media (max-width: 800px) {
-    .container {
-        margin-left: auto;
-    }
+  .container {
+    margin-left: auto;
+  }
 
-    .dates{
-        display: none;
-    }
+  .dates {
+    display: none;
+  }
+
+  .formations {
+    margin-left: 20%;
+  }
 }
