@@ -2,21 +2,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 20px;
-  margin: 100px 0;
+  gap: 30px;
+  margin: 50px auto;
 }
 
 .dates {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
-  flex: 0.2; 
+  flex: 0.3;
 }
 
 .formations {
   display: flex;
   flex-direction: column;
-  flex: 0.8; 
+  flex: 0.7;
 }
 
 .dates h1 {

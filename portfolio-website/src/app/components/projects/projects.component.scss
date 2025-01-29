@@ -1,60 +1,88 @@
 .container {
-    display: grid;
-    gap: 20px;
-    max-width: 900px;
-    margin: 50px auto;
-  }
-  
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: 100px 30px 0px 0px;
+}
+
+.container-effect {
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.container:hover .container-effect {
+  opacity: 0.5;
+}
+
+.container-effect:hover {
+  opacity: 1 !important;
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  backdrop-filter: blur(1.5rem);
+}
+
+.container-effect:hover .title {
+  color: #53f8c9; 
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.image {
+  flex: 0.4;
+  margin-left: 10px;
+  min-height: 120px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 20px;
+  height: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.details {
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
   .project-container {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(253, 253, 253, 0.78);
-    backdrop-filter: blur(10px);
-  }
-  
-  .image {
-    flex: 0.3;
-    min-height: 120px;
-    background-color: #e0e0e0;  /* Fond gris clair */
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-  }
-  
-  .content {
-    flex: 0.7;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
+    text-align: center;
   }
-  
-  .title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
+
+  .image {
+    flex: none;
+    width: 100%;
+    height: 150px;
   }
-  
-  .details {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+
+  .content {
+    padding: 10px 0;
+    align-items: center; 
+    text-align: center;
   }
-  
-  @media (max-width: 600px) {
-    .project-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .image {
-      flex: none;
-      width: 100%;
-      height: 150px;
-    }
-  
-    .content {
-      padding: 10px 0;
-    }
-  }
-  
+}
