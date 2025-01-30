@@ -22,7 +22,7 @@
 }
 
 .container-effect:hover .title {
-  color: #53f8c9; 
+  color: #53f8c9;
 }
 
 .project-container {
@@ -66,6 +66,52 @@
 
 .details {
   font-size: 1rem;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.text {
+  flex: 1; 
+}
+
+.competence-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.competence-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.competence-btn:hover {
+  transform: scale(1.1);
+}
+
+.competence-btn[data-competence="Réaliser"] {
+  background-color: #effa1f;
+}
+.competence-btn[data-competence="Optimiser"] {
+  background-color: #18ff37;
+}
+.competence-btn[data-competence="Administrer"] {
+  background-color: #44fff6;
+}
+.competence-btn[data-competence="Gérer"] {
+  background-color: #c146ff;
+}
+.competence-btn[data-competence="Conduire"] {
+  background-color: #ff288c;
+}
+.competence-btn[data-competence="Collaborer"] {
+  background-color: #fd1616;
 }
 
 @media (max-width: 800px) {
@@ -82,7 +128,7 @@
 
   .content {
     padding: 10px 0;
-    align-items: center; 
+    align-items: center;
     text-align: center;
   }
 }
