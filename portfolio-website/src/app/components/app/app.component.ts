@@ -6,6 +6,7 @@ import { CompetencesComponent } from '../competences/competences.component';
 import { FormationComponent } from '../formation/formation.component';
 import { MenuComponent } from '../menu/menu.component';
 import { ProjectsComponent } from '../projects/projects.component';
+import { CvComponent } from '../../cv/cv.component';
 
 
 @Component({
@@ -19,6 +20,7 @@ import { ProjectsComponent } from '../projects/projects.component';
     AboutComponent,
     CompetencesComponent,
     ProjectsComponent,
+    CvComponent,
   ],
 })
 export class AppComponent implements AfterViewInit {
@@ -40,7 +42,6 @@ export class AppComponent implements AfterViewInit {
         }
       });
 
-      // Ajoute les événements de scroll sur les boutons de compétence
       const competenceButtons = document.querySelectorAll('.competence-btn');
       competenceButtons.forEach(button => {
         this.renderer.listen(button, 'click', () => {
