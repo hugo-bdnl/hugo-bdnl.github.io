@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 3px solid rgb(221, 221, 221); 
+  border: 3px solid rgb(221, 221, 221);
   border-radius: 10px;
   box-sizing: border-box;
 }
@@ -69,12 +69,12 @@
 .details {
   font-size: 1rem;
   display: flex;
-  flex-direction: column; 
-  gap: 10px; 
+  flex-direction: column;
+  gap: 10px;
 }
 
 .text {
-  flex: 1; 
+  flex: 1;
 }
 
 .competence-wrapper {
@@ -116,6 +116,29 @@
 }
 .competence-btn[data-competence="Collaborer"] {
   background-color: #fd1616;
+}
+
+.details {
+  position: relative;
+}
+
+.github-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.github-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.github-btn:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
