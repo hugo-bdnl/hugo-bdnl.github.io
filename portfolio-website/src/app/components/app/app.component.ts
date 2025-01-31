@@ -1,13 +1,18 @@
 import { isPlatformBrowser } from '@angular/common';
-import { AfterViewInit, Component, Inject, PLATFORM_ID, Renderer2 } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  Inject,
+  PLATFORM_ID,
+  Renderer2,
+} from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { AboutComponent } from '../about/about.component';
 import { CompetencesComponent } from '../competences/competences.component';
+import { CvComponent } from '../cv/cv.component';
 import { FormationComponent } from '../formation/formation.component';
 import { MenuComponent } from '../menu/menu.component';
 import { ProjectsComponent } from '../projects/projects.component';
-import { CvComponent } from '../../cv/cv.component';
-
 
 @Component({
   standalone: true,
@@ -43,11 +48,12 @@ export class AppComponent implements AfterViewInit {
       });
 
       const competenceButtons = document.querySelectorAll('.competence-btn');
-      competenceButtons.forEach(button => {
+      competenceButtons.forEach((button) => {
         this.renderer.listen(button, 'click', () => {
           const competence = button.getAttribute('data-competence');
-          const targetElement = Array.from(document.querySelectorAll('.competence'))
-            .find(el => el.querySelector('h1')?.textContent === competence);
+          const targetElement = Array.from(
+            document.querySelectorAll('.competence')
+          ).find((el) => el.querySelector('h1')?.textContent === competence);
 
           if (targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
